@@ -14,6 +14,7 @@ edition Number(4)
 How the application works and its functionality:
 ----------------------------------------------------------
 When the application is up and running, user can see all the fields and the operation buttons. 
+
 1)	Display Table Button: Will display the table to the user. The user can see all the data in the table.
 2)	Insert Button: The user needs to enter all the fields and needs to hit Insert button, then the data is inserted into the database this can be verified by clicking the “Display Table” button.
 3)	Update Button: The user needs to enter all the fields to update, or to avoid that the user can enter the “Isbn” and click the “Retrive Button” so that all the data are retrieved and displayed then the user can make changes to particular field and click update but the user needs to enter all the field to update.
@@ -30,11 +31,15 @@ User -> Insert Button -> InsertDataController -> DatabaseManager -> DataBaseImpI
 
 2)	Update Operation:
 User -> Update Button -> UpdateDataController -> DatabaseManager -> DataBaseImpInterface-> RelationalDatabaseImpl -> UpdateDB.
+
 3)	Delete Operation:
 User -> Delete Button -> DeleteDataController -> DatabaseManager -> DataBaseImpInterface-> RelationalDatabaseImpl -> DeleteDB.
+
 4)	Retrieve Operation:
 User -> Retrive Button -> RetriveDataController -> DatabaseManager -> DataBaseImpInterface-> RelationalDatabaseImpl -> RetriveDB.
+
 5)	Undo Operation:
 User -> Undo Button -> UndoDataController -> DatabaseManager -> DataBaseImpInterface-> RelationalDatabaseImpl -> UndoDB.
+
 6)	Redo Operation:
 User -> Redo Button -> RedoDataController -> DatabaseManager -> DataBaseImpInterface-> RelationalDatabaseImpl -> RedoDB.
